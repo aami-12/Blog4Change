@@ -57,7 +57,7 @@
     "apikeygen": "^1.1.0",
     "array-tools": "1.8.6",
     "bcrypt-nodejs": "0.0.3",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "chai": "^4.2.0",
     "cookie-parser": "^1.4.4",
     "debug": "~2.6.9",
