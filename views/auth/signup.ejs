@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../head') -%>
+
+  <body>
+    <div id="main-wrapper">
+      <!--[if lt IE 7]>
+          <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a rel="nofollow" href="http://browsehappy.com">upgrade your browser</a> or <a rel="nofollow" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 affix text-center" style="z-index: 1;">
+          <h1 class="templatemo-site-title">
+                 
+                  <img src="/temp/images/btn-menu.png" alt="main menu" id="m-btn" class="pull-right visible-xs visible-sm" >
+          </h1>
+
+          <ul id="responsive" style="display:none" class="hidden-lg hidden-md"></ul><!-- /.responsive -->
+      </div>
+
+      <div class="menu visible-md visible-lg">
+        <ul id="menu-list">
+          <li class="active home-menu"><a href="#home">Home</a></li>
+          <li class="about-menu"><a href="#about">About Us</a></li>
+          <li class="services-menu"><a href="#services">Our Mission</a></li>
+          
+          <li class="contact-menu"><a href="#contact">Contact</a></li>
+         
+      </ul>
+      </div><!-- /.menu -->
+
+      <div class="image-section">
+          <div class="image-container">
+              <img src="/temp/images/nature1.jpg" id="home-img" class="main-img inactive" alt="Home">
+              <img src="/temp/images/nature2.jpg" id="about-img" class="inactive" alt="About">
+              <img src="/temp/images/nature3.jpg" id="services-img"  class="inactive" alt="Services">
+              <img src="/temp/images/nature4.jpg" id="testimonial-img" class="inactive" alt="Testimonial">
+              <img src="/temp/images/nature5.jpg" id="contact-img" class="inactive" alt="Contact">
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-6 col-md-offset-6 templatemo-content-wrapper">
+              <div class="templatemo-content">
+                  
+                  <section id="home-text" class="active templatemo-content-section">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="container-fluid">
+                          <a href="/" class="float-left">
+                            <h2>
+                              <img src="/images/logo/logo.png" class="logo">
+                              Blog For Climate Change
+                            </h2>
+                          </a>
+                    
+                        </div>
+                        <br>
+                      <div class="col-sm-6 col-sm-offset-3">
+                         <!-- show any messages that come back with authentication -->
+                        <% if (error) { %>
+                        <div class="alert alert-danger">
+                            <%= error %>
+                        </div>
+                        <% } %>
+                            <!-- Signup FORM -->
+                        <form action="/account/new" method="post" enctype="multipart/form-data">
+                             <label  class="label" style="color: black;">Full name</label>
+                            <div class="form-group">
+                    
+                            <input type="text" placeholder="first_name" class="form-control" style="width: 48%;float: left;" name="fn" required="">
+                            <input type="text" placeholder="last_name" class="form-control" style="width: 48%;float: right;" name="ln" required="">
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                                <label  class="label" style="color: black;">Username</label>
+                                <input type="text" placeholder="your_nick_name" class="form-control" name="username" required="">
+                            </div>
+                            <div class="form-group">
+                                <label  class="label" style="color: black;">Password</label>
+                                <input type="password" placeholder="the_secret" class="form-control" name="password" required="">
+                            </div>
+                            <label  class="label" style="color: black;">Date of birth</label>
+                            <div class="form-group">
+                            <select class="form-control" name="day" style="float: left;width: 33%;">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                               <option>31</option>
+                             </select>
+                            <select class="form-control" name="month" style="float: left;width: 33%;">
+                                <option>Jan</option>
+                                <option>Feb</option>
+                                <option>Mar</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>Aug</option>
+                                <option>Sept</option>
+                                <option>Oct</option>
+                                <option>Nov</option>
+                                <option>Dec</option>
+                            </select>
+                            <select class="form-control" name="year" style="float: left;width: 33%;">
+                                <option>1960</option>
+                                <option>1961</option>
+                                <option>1962</option>
+                                <option>1963</option>
+                                <option>1964</option>
+                                <option>1965</option>
+                                <option>1966</option>
+                                <option>1967</option>
+                                <option>1968</option>
+                                <option>1969</option>
+                                <option>1970</option>
+                                <option>1971</option>
+                                <option>1972</option>
+                                <option>1973</option>
+                                <option>1974</option>
+                                <option>1975</option>
+                                <option>1976</option>
+                                <option>1977</option>
+                                <option>1978</option>
+                                <option>1979</option>
+                                <option>1980</option>
+                                <option>1981</option>
+                                <option>1982</option>
+                                <option>1983</option>
+                                <option>1984</option>
+                                <option>1985</option>
+                                <option>1986</option>
+                                <option>1987</option>
+                                <option>1988</option>
+                                <option>1989</option>
+                                <option>1990</option>
+                                <option>1991</option>
+                                <option>1992</option>
+                                <option>1993</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                            </select>
+                            </div><br><br>
+                            <button type="submit" class="btn btn-success btn-action">GET STARTED</button>
+                        </form>
+                        <hr>
+                       <p class="text-muted">Already a part of it? <a href="/account/getin">login now!</a></p>
+                       </div>
+                    
+                      </div>
+                  </section><!-- /.home-text -->    
+
+                  <section id="about-text" class="inactive">
+                    <h2 class="text-center">About our website</h2>
+                    <div class="col-sm-6 col-md-6">
+                     <p>Blog For Change is a knowledge sharing portal as climate change is the
+                      defining issue of our time and we are at a defining moment from shifting weather
+                      patterns to increase risk of catastrophic flooding. The aim of this portal is to
+                      improve climate change and amplifying the impact of climate change in the
+                      future. </p>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <p>
+                          Here, an individual can posts about the climate crisis that is happening
+                          around his/her surrounding and can get solutions or feedback on how to deal with
+                          the crisis. We hope initiative to change becomes a place for development
+                          practitioners to help identify and refine practices.
+                        </p>
+                    </div>
+                </section><!-- /.about-text --> 
+
+                <section id="services-text" class="inactive">
+                    <h2 class="text-center">Our Services</h2>
+                    <div class="col-sm-4 col-md-4">
+                       
+                        <p>Looking at the present climate crisis, we are here to make urgent action a
+                          necessity in politics, in business i.e.., in every aspect of our lives.
+                          Everywhere.</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                       
+                        <p>To bring courage, commitment, and passion among the current generation. </p>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        
+                        <p> Inspire people to do action to protect their community and lead the global
+                          fight for solutions.</p>
+                    </div>
+                </section><!-- /.services-text --> 
+
+                  <section id="testimonial-text" class="inactive">
+                      <div class="col-sm-12 col-md-12">
+                          <h2>Testimonials</h2>
+                          <p>Vestibulum sem purus, interdum sit amet varius id, porta sit amet sem. Mauris nec dui ut sapien finibus bibendum eget sit amet nulla. Proin condimentum urna quis tincidunt euismod. Vivamus eget sem at lorem varius pretium. Sed nisl lacus, sollicitudin sed elit et, convallis convallis arcu.</p>
+                          <p>Nulla ut consequat felis, et euismod enim. Etiam at tellus eget dui tristique eleifend pretium eu tellus. Integer eu facilisis velit. Proin in mollis metus, id vestibulum enim.</p>
+                      </div>
+                  </section><!-- /.testimonial-text --> 
+
+                  <section id="contact-text" class="inactive">
+                      <div class="col-sm-12 col-md-12">
+                          <div class="row">
+                              <div class="col-sm-12 col-md-12"><h2>Contact</h2></div>
+                              <div class="clearfix"></div>
+                          </div>
+                          
+                          <div class="row">
+                              <div class="col-sm-6 col-md-6">
+                                  <div id="map-canvas"></div>
+                                  <p>990 Digital Street, New Forest Area, San Francisco, CA 10660</p>
+                              </div>
+
+                              <div class="col-sm-6 col-md-6">
+                                  <form action="#" method="post">
+
+                                          <div class="form-group">
+                                              <!--<label for="contact_name">Name:</label>-->
+                                              <input type="text" id="contact_name" class="form-control" placeholder="Name" />
+                                          </div>
+                                          <div class="form-group">
+                                              <!--<label for="contact_email">Email:</label>-->
+                                              <input type="text" id="contact_email" class="form-control" placeholder="Email Address" />
+                                          </div>
+                                          <div class="form-group">
+                                              <!--<label for="contact_message">Message:</label>-->
+                                              <textarea id="contact_message" class="form-control" rows="7" placeholder="Write a message"></textarea>
+                                          </div>
+                                          <button type="submit" class="btn btn-primary">Send</button>
+
+                                  </form>
+                              </div>
+                              
+                              <div class="clearfix"></div>
+                          </div>
+                      </div>
+                  </section><!-- /.contact-text --> 
+              </div><!-- /.templatemo-content -->  
+          </div><!-- /.templatemo-content-wrapper --> 
+      </div><!-- /.row --> 
+
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
+              <p class="footer-text">
+                <span>Copyright &copy; 2020 Company Name - Design: TemplateMo</span>
+            </p>
+          </div><!-- /.footer --> 
+      </div>
+
+</div><!-- /#main-wrapper -->
+  
+  <div id="preloader">
+      <div id="status">&nbsp;</div>
+  </div><!-- /#preloader -->
+  
+  <script src="/temp/js/jquery.min.js"></script>
+  <script src="/temp/js/jquery.backstretch.min.js"></script>
+  <script src="/temp/js/templatemo_script.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/dom.js"></script>
+  <script type="text/javascript" src="/javascripts/socket.io.js"></script>
+  <script type="text/javascript" src="/javascripts/connect.js"></script>
+  <!-- templatemo 398 nature -->
+</body>
